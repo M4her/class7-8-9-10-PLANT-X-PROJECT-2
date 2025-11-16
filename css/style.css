@@ -1,0 +1,543 @@
+/* ---------Fonts link Start-------------- */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belleza&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Adamina&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+
+
+
+/* ------------------Fonts Link End-------------------------- */
+/* --------------------Common Css Start------------------------------ */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+
+}
+
+a{
+    text-decoration: none;
+    display:   inline-block;
+}
+img{
+    width: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+}
+ul,ol{
+    list-style: none;
+}
+ .container{
+    width:  1340px;
+    margin: 0 auto;
+ }
+/* --------------------Common Css End  ------------------------------ */
+
+/* --------------------Nav Css Start------------------------------ */
+#main_menu{
+    padding-top: 28px;
+    padding-bottom: 29px;
+}
+.menu_row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu_row .menu_logo a{
+    width: 123px;
+}
+.menu_row ul{
+    display: flex;
+    gap: 45px;
+}
+.menu_row ul li a{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Quicksand", sans-serif;
+    color: #000000;
+    position: relative;
+    overflow: hidden;
+    transition: all linear .4s;
+}
+.menu_row ul li a:hover{
+    transform: rotate(45dg);
+}
+.menu_row .menu_icons{
+    display: flex;
+    gap: 33px;
+}
+.menu_icons .srcIcon{
+    font-size: 24px;
+}
+.menu_icons .userProfile{
+    font-size: 24px;
+    color: #000000;
+}
+
+.menu_icons button{
+    border: none;
+    background: transparent;
+    
+}
+.menu_items ul li a::before{
+    content: '';
+    width: 50%;
+    height: 2px;
+    background-color: #000000;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transition: all linear .4s;
+}
+.menu_items ul li a::after{
+    content: '';
+    width: 50%;
+    height: 2px;
+    background-color: #000000;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transition: all linear .4s;
+}
+.menu_items ul li a:hover::before{
+    left: -100%;
+    
+}
+.menu_items ul li a:hover::after{
+    right: -100%;
+    
+}
+/* --------------------Nav Css End  ------------------------------ */
+
+/* --------------------Banner Css Start------------------------------ */
+#banner{
+    position: relative;
+}
+.banner_text h1{
+    width: 524px;
+    font-size: 85px;
+    font-weight: 400;
+    font-family: "Belleza", sans-serif;
+    color: #010101;
+    margin-top: 96px;
+
+}
+.banner_text a{
+    width: 178px;
+    height: 55px;
+    background: #010101;
+    border-radius: 38px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Adamina", serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 46px;
+    margin-bottom: 89px;
+
+}
+.banner_text h2{
+    width: 320px;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: "Adamina", serif;
+    color: #000;
+
+}
+.banner_text p{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Adamina", serif;
+    color: #000;
+    margin-top: 33px;
+    margin-bottom: 62px;
+
+}
+.brandImages{
+    display: flex;
+    gap: 90px;
+    
+}
+.brandImages .brand1{
+    width: 190px;
+
+}
+.brandImages .brand2{
+    width: 114px;
+}
+.plant img{
+    width: 629px;
+    height: 730px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+/* --------------------Banner Css End  ------------------------------ */
+/* --------------------plant care Css Start------------------------------ */
+#plant_care{
+    padding-top: 142px;
+}
+.plant_care_row{
+    display: flex;
+    gap: 135px;
+}
+.plant_care_row .plant_care_text1 p{
+    width: 453px;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: "Abel", sans-serif;
+    color: #000;
+}
+.plant_care_row .plant_care_text2 h2{
+    width:627px;
+    font-size: 36px;
+    font-weight: 500;
+    font-family: "Lora", serif;
+    color: #000;
+
+}
+.plant_care_row .plant_care_text2 a{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Adamina", serif;
+    color: #000;
+    margin-top: 63px;
+    display: flex;
+    gap: 9px;
+
+}
+
+/* --------------------plant care Css End  ------------------------------ */
+
+/* --------------------Together Css Start------------------------------ */
+#together{
+    height: 436px;
+    background: #EDEDED;
+    margin-top: 446px;
+    position: relative;
+}
+#together .togetherImage{
+    width: 1340px;
+    position: absolute;
+    top: -67%;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+#together h2{
+    font-size: 36px;
+    font-weight: 500;
+    font-family: "Lora", serif;
+    color: #000;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* --------------------Together Css End  ------------------------------ */
+
+/* --------------------Our-Shop-Part-Start------------------------------ */
+#ourShop{
+    padding-top: 114px;
+}
+.shopHead h2{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Adamina", serif;
+    color: #000;
+    margin-bottom: 34px;
+}
+.shopHead h3{
+    width: 526px;
+    font-size: 48px;
+    font-weight: 500;
+    font-family: "Lora", serif;
+    color: #000;
+ 
+}
+.shopHead a{
+    width: 134px;
+    height: 41px;
+    background: #010101;
+    border-radius: 29px;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: "Adamina", serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 37px;
+    margin-bottom: 50px;
+    
+}
+.shop_card_row{
+    display: flex;
+    gap: 44px;
+
+}
+.shop_card_row .shop_single_card1 .product_img{
+    width: 368px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.product_img .overlay{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    background: rgba(0, 0, 0, 0.30);
+    transition: all .4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: orange;
+    gap: 20px;
+    border: none;
+
+}
+.overlay p{
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Adamina", serif;
+    color: #fff;
+
+
+}
+.product_img:hover .overlay{
+    top: 0;
+}
+
+.shop_single_card1 .product_text{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
+}
+
+
+
+.shop_single_card1 .product_text h2{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Adamina", serif;
+    color: #000;
+}
+/* --------------------Our-Shop-Part-End------------------------------ */
+
+/* --------------------Reviews Css Start------------------------------ */
+#review{
+    padding-top: 178px;
+}
+.review_text_1 h2{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Adamina", serif;
+    color: #000;
+
+}
+.review_text_1 .review_para{
+    width: 262px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Abel", sans-serif;
+    color: #000;
+    margin-top: 23px;
+    margin-bottom: 10px;
+}
+.review_stars{
+    display: flex;
+     gap: 17px;
+}
+.review_stars ul{
+    display: flex;
+    gap: 6px;
+    color: #DEEC3C;
+   
+
+}
+.review_stars p{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Abel", sans-serif;
+    color: #000;
+}
+.review_text_row{
+    display: flex;
+    gap: 183px;
+}
+.review_text_1 .total_review{
+    font-size: 13px;
+    font-weight: 400;
+    font-family: "Adamina", serif;
+    color: #000;
+    margin-top: 15px;
+
+}
+.review_text_2 h2{
+    width: 676px;
+    font-size: 36px;
+    font-weight: 500;
+    font-family: "Lora", serif;
+    color: #000;
+
+}
+.review_text_2 h3{
+    font-size: 24px;
+    font-weight: 500;
+    font-family: "Lora", serif;
+    color: #000;
+    margin-top: 59px;
+    margin-bottom: 11px;
+
+}
+.review_text_2 p{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Abel", sans-serif;
+    color: #000;
+}
+.review_images{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 54px;
+}
+
+/* --------------------Reviews Css End  ------------------------------ */
+/* --------------------Instra Css Start------------------------------ */
+.instraMainDiv{
+    background:url("../image/instraBg.png") ;
+    height: 746px;
+    margin-top: 50px;
+    padding-top: 72px;
+    padding-left: 116px;
+
+}
+.instraMainDiv h2{
+    width: 401px;
+    font-size: 48px;
+    font-weight: 500;
+    font-family: "Lora", serif;
+    color: #000;
+}
+.instraMainDiv p{
+    width: 286px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Abel", sans-serif;
+    color: #000;
+    margin-top: 9px;
+    margin-bottom: 7px;
+}
+.instraMainDiv a{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Adamina", serif;
+    color: #000;
+    display: flex;
+    gap: 33px;
+    align-items: center;
+
+}
+.arrow_icon{
+    font-size: 24px;
+}
+/* --------------------Instra Css End  ------------------------------ */
+/* --------------------Email Css Start------------------------------ */
+#email{
+    padding-top: 56px;
+    padding-bottom: 67px;
+}
+.email_row{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+}
+.email_text h2{
+    width: 706px;
+    font-size: 48px;
+    font-size: 500;
+    font-family: "Lora", serif;
+    color: #000;
+}
+.input_div{
+    width: 382px;
+    border-bottom: 2px solid #000;
+    padding-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.input_div input{
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Abel", sans-serif;
+    color: #000;
+}
+.input_div input::placeholder{
+    color: #000;
+
+}
+.input_div button{
+    width: 129px;
+    height: 40px;
+    background: #000;
+    border-radius: 26px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Adamina", serif;
+    color: #fff;
+}
+/* --------------------Email Css End  ------------------------------ */
+/* --------------------Footer Css Start------------------------------ */
+#footer{
+    padding-top: 60px;
+    padding-bottom: 63px;
+    background: #F3F3F3;
+}
+.footer_row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer_row .footer_logo{
+    width: 123px;
+}
+.footer_row .footer_items ul{
+    display: flex;
+    gap: 59px;
+
+}
+.footer_row .footer_items ul li a{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Quicksand", sans-serif;
+    color: #000;
+
+}
+.footer_row .footer_icons ul{
+    display: flex;
+    gap: 60px;
+}
+.footer_row .footer_icons u li a{
+    font-size: 24px;
+    color: #000;
+}
+
+
+/* --------------------Footer Css End------------------------------ */
+
+
+
